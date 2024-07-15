@@ -29,6 +29,11 @@ export const allItems: TAllItems = {
     Icon: SettingsInputComponent,
     spaUrl: spaUrl.connections.gamesTable,
   },
+  gamesVideoTutorials: {
+    name: 'Video Game Tutorials',
+    Icon: SettingsInputComponent,
+    spaUrl: spaUrl.connections.gamesVideoTutorials,
+  },
   landingPage: {
     name: 'Landing Page',
     Icon: Anchor,
@@ -44,7 +49,7 @@ export const allItems: TAllItems = {
 export const NavTree: TNavTreeModel = [allItems.landingPage];
 
 export const UserMenuTree: TNavTreeModel = [
-  allItems.gamesList, allItems.gamesTable, allItems.logout];
+  allItems.gamesList, allItems.gamesTable, allItems.gamesVideoTutorials, allItems.logout];
 
 const allTitles = Object.values(allItems).map((item) => item.name);
 

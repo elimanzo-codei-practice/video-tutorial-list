@@ -21,6 +21,11 @@ export default function HomePage() {
           See Our Games Table!
         </Button>
       </Grid>
+      <Grid item xs={12}>
+        <Button component={Link} to={connections.gamesVideoTutorials} variant='contained' color='primary'>
+          See Our Video Game Tutorials!
+        </Button>
+      </Grid>
     </Grid>
   );
 }
